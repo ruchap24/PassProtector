@@ -47,15 +47,15 @@ function App() {
 
   return (
     <>
-    <div className={`w-full max-w-md mx-auto shadow-lg rounded-lg px-4 py-3 my-8 text-white bg-green-600  transition-opacity duration-1000 ease-in-out ${!copyAlert ? 'opacity-0' : 'opacity-100'}`} role="alert">
+    <div className={`w-full max-w-md mx-auto shadow-lg rounded-lg px-4 py-3 my-8 text-black bg-red-600  transition-opacity duration-1000 ease-in-out ${!copyAlert ? 'opacity-0' : 'opacity-100'}`} role="alert">
      <p>Passoword is Copied to Clipboard</p>
     </div> 
 
       <div className="w-full max-w-md mx-auto shadow-lg rounded-lg px-4 py-3 my-8 text-orange-500 bg-amber-300">
-          <h1 className="text-green-600 text-center">Random Password Generator</h1>
+          <h1 className="text-blue-600 text-center">Random Password Generator</h1>
           <div className="flex shadow rounded-lg overflow-hidden mb-4">
             <input type="text" value={password} className="outline-none w-full py-1 px-3" placeholder="password" readOnly/>
-            <button className="outline-none bg-blue-700 text-white px-3 py-0.5 hover:bg-lime-400 hover:text-black" onClick={copyToClipBoard}>Copy</button>
+            <button className="outline-none bg-black-400 text-white px-3 py-0.5 hover:bg-lime-400 hover:text-black" onClick={copyToClipBoard}>Copy</button>
           </div>
           <div className="flex text-sm gap-x-2">
              <div className="flex items-center gap-x-1">
